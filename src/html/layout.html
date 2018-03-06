@@ -1,0 +1,50 @@
+<!DOCTYPE html> 
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta content="telephone=no" name="format-detection">
+  <title>{{metaTitle}}</title>
+  <meta content="{{metaKeywords}}" name="keywords">
+  <meta content="{{metaDescription}}" name="description">
+  <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+  <meta content="yes" name="apple-mobile-web-app-capable">
+  <meta content="black" name="apple-mobile-web-app-status-bar-style">
+  <meta content="telephone=no" name="format-detection">
+</head>
+<body>
+  <nav id="common-nav" role="navigation">
+    <div class="nav-containner">
+      <ul id="nav-list">
+        <li>
+          <a href="/">首页</a>
+        </li>
+        <li class="{{active-about}}"><a href="/about.html">about</a></li>
+        <li class="{{active-more}}"><a href="/more.html">more</a></li>
+        <li>
+          <div class="line"></div>
+          <a href="/contact.html">联系我们</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div id="root">
+    
+    <div class="container">
+      <div id="backdrop"></div>
+      <div class="nav-placeholder"></div>
+      <main class="content">
+        {{main}}
+      </main>
+      <footer>
+        <section class="contact-info">
+          
+        </section>
+        <section class="copy">
+          <copy>copy</copy>
+        </section>
+      </footer>
+    </div>
+    
+  </div>
+</body>
+</html>
