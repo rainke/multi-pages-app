@@ -6,7 +6,7 @@ const FriendlyErrorsWebpackPlugin = require('friendly-errors-webpack-plugin');
 const OpenBrowserPlugin = require('./plugins/openBrowser');
 const devConfig = require('./dev-config');
 
-const entrys = ['index', 'institution', 'community', 'home-based', 'more', 'contact', 'none'];
+const entrys = ['index', 'more', 'contact', 'none'];
 const entry = entrys.reduce((prev, next) => {
   const ret = prev;
   ret[next] = ['./client-server.js', `./src/js/${next}.js`];
